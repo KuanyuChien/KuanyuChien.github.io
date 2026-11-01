@@ -15,6 +15,8 @@ A responsive, zero-build personal academic and engineering website inspired by a
 - `assets/style.css`: Colors, typography, layout, responsive styling
 - `assets/app.js`: Shared navigation, templates, and filter interactions
 - `assets/favicon.svg`: Editable site icon
+- `assets/images/kuanyu-headshot.jpg`: Your homepage headshot
+- `WEBSITE_INSPIRATION.md`: Curated examples of student websites and templates, with links and ideas to borrow
 
 ## View the website locally
 
@@ -49,7 +51,8 @@ If the repo is named `my-portfolio`, its default address is `https://<your-usern
 4. **Notes:** Edit/add entries in `notes`. A note opens at `note.html?id=ID` and can connect to a project with `project:'ID'`.
 5. **Research / CV:** Edit the `research()` and `cv()` functions in `assets/app.js` as new experiences arise.
 6. **Theme:** Change the CSS variables at the beginning of `assets/style.css` (e.g., `--accent`, `--bg`, `--ink`).
-7. **Add your own visuals:** Insert screenshots, plots, diagrams or videos only when you have rights and, for lab work, advisor approval. This starter uses abstract CSS graphics, not sourced photographs.
+7. **Headshot:** Replace `assets/images/kuanyu-headshot.jpg` with a new photo using the same filename, or update the image path in `assets/app.js`.
+8. **Add your own visuals:** Insert screenshots, plots, diagrams or videos only when you have rights and, for lab work, advisor approval. This starter uses abstract CSS graphics, not sourced photographs.
 
 ## Suggested site maintenance
 
@@ -69,3 +72,16 @@ Notes about PushT include final 200k-step evaluation: DP 67.0%, ACT 31.6% over 5
 - Connect a custom domain.
 - If you later want Markdown blog authoring, migrate the content to **al-folio / Jekyll** or **Astro**. This version intentionally prioritizes a simple immediate deployment.
 
+
+## Resume versions and privacy
+
+Three resume versions are organized separately in `resume-archive/` in the **companion archive**, not inside this public website folder. These documents contain a personal phone number. Do not upload the `resume-archive/` folder to a public GitHub Pages repository unless you explicitly want to disclose that information.
+
+Links copied from the resumes and used on the website:
+- GitHub: https://github.com/KuanyuChien
+- LinkedIn: https://www.linkedin.com/in/kuanyuchien
+- Email: kuanyu.chien.eng@gmail.com
+
+## Design references
+
+See **[WEBSITE_INSPIRATION.md](WEBSITE_INSPIRATION.md)** for the four main inspirations (Yuezhi Yang, Isaac Hung, Winston Hu, and al-folio), additional undergraduate/master's/PhD profiles, reusable templates, and a plan for future design improvements. This file is kept in the website project for reference; it does not appear in the public navigation.
