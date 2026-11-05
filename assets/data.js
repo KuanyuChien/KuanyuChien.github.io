@@ -36,7 +36,7 @@ window.SITE = {
     {
       id:'sql',type:'Course Project',tag:'Compilers / Databases',year:'2026',title:'Lightweight SQL Database',
       summary:'Implemented a small in-memory SQL engine from tokenizer and parser through execution.',
-      stack:['Python','SQL','Parsing','Query Execution'],theme:'mint',featured:true,
+      stack:['Python','SQL','Parsing','Query Execution'],theme:'mint',featured:false,
       role:'Computer Science Course Project',
       overview:'I implemented an in-memory database engine supporting SQL query processing. This project gave me hands-on experience with language parsing, internal representations, and execution behavior.',
       contributions:['Built a tokenizer, parser, storage layer, and query execution engine.','Added support for joins, subqueries, set operations, and NULL logic.','Tested the engine against thousands of cases and improved performance.'],
@@ -57,11 +57,12 @@ window.SITE = {
     {
       id:'gello-yam',type:'Research',tag:'Robotics / Teleoperation',year:'2026',title:'Bimanual GELLO Teleoperation on YAM',
       summary:'Integrated two GELLO leader devices to teleoperate both YAM Ultra arms together through a streamlined launch workflow.',
-      stack:['ROS 2','GELLO','YAM Ultra','Teleoperation'],theme:'orange',featured:false,
+      stack:['ROS 2','GELLO','YAM Ultra','Teleoperation'],theme:'orange',featured:true,
       role:'Student Researcher · SPARK Robotics Lab',
       cover:'assets/projects/gello-yam/gello-leaders.jpg',
       photo:{src:'assets/projects/gello-yam/gello-leaders.jpg',alt:'Two assembled 3D-printed GELLO leader arms with servo motors mounted side by side on a wooden board.',caption:'The two GELLO leader arms I assembled for bimanual YAM teleoperation.'},
-      demo:{title:'Collecting a demonstration',video:'assets/projects/gello-yam/teleop_demo_bottle.mp4',poster:'assets/projects/gello-yam/teleop_demo_bottle_poster.jpg',caption:'A recorded data-collection episode: I teleoperate the YAM arms with the GELLO leaders to pick up a bottle and place it in the bin. Three synchronized camera views.'},
+      demo:[{title:'GELLO teleoperation in action',video:'assets/projects/gello-yam/gello_teleop_operator.mp4',poster:'assets/projects/gello-yam/gello_teleop_operator_poster.jpg',caption:'Operator view: I move the GELLO leader arm by hand and the YAM arm follows, carrying a bottle toward the bin.'},
+        {title:'Collecting a demonstration',video:'assets/projects/gello-yam/teleop_demo_bottle.mp4',poster:'assets/projects/gello-yam/teleop_demo_bottle_poster.jpg',caption:'A recorded data-collection episode: I teleoperate the YAM arms with the GELLO leaders to pick up a bottle and place it in the bin. Three synchronized camera views.'}],
       overview:'I assembled the GELLO leader arms, then brought up and calibrated a second GELLO leader, mapped it to the right YAM Ultra arm, and integrated both leaders into a shared bimanual teleoperation workflow. The goal was to make two-arm control reliable enough for everyday research use while keeping startup and shutdown simple.',
       contributions:['Assembled the 3D-printed GELLO leader arms, including servos and wiring, for YAM teleoperation.','Verified communication across all seven actuators on the new right-hand leader.','Calibrated the leader at the robot zero pose and created a matching right-arm joint and gripper mapping.','Validated joint, zero-pose, and gripper behavior in simulation before testing both arms together on the physical system.','Used the bimanual setup to teleoperate the YAM arms and record demonstration episodes for policy training, such as picking up a bottle and placing it in a bin.','Reduced the operator workflow to a single launch command and separate arm/disarm controls.','Adjusted wrist-joint step limits to reduce clipping at higher leader speeds; physical-robot validation remains pending.'],
       results:[{label:'Arms teleoperated',value:'2'},{label:'Physical test',value:'~3 min'},{label:'Automated tests',value:'41 passing'}],
